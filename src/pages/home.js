@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const tutors = [
   {
@@ -60,7 +62,6 @@ class Home extends React.Component {
       return (
         <li>
           {tutor.Name}
-          {tutor.ZipCode}
           {tutor.Subject}
         </li>
       );
@@ -85,6 +86,57 @@ class Home extends React.Component {
           <input type="submit" value="Submit" />
         </form>
         <ul>{tutorList}</ul>
+        <Link to="/SAT">
+          <Button
+            onClick={() => console.log("Clicked!")}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--medium"
+          >
+            SAT{" "}
+          </Button>
+        </Link>
+
+        <Link to="/MATH">
+          <Button
+            onClick={() => console.log("Clicked!")}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--medium"
+          >
+            MATH{" "}
+          </Button>
+        </Link>
+        <Link to="/ReadingCom">
+          <Button
+            onClick={() => console.log("Clicked!")}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--medium"
+          >
+            READING COMPREHENSION{" "}
+          </Button>
+        </Link>
+        <Link to="/ForeignLan">
+          <Button
+            onClick={() => console.log("Clicked!")}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--medium"
+          >
+            FOREIGN LANGUAGES
+          </Button>
+        </Link>
+        <Link to="/CAStandards">
+          <Button
+            onClick={() => console.log("Clicked!")}
+            type="button"
+            buttonStyle="btn--primary--outline"
+            buttonSize="btn--medium"
+          >
+            CA STATE STANDARDS{" "}
+          </Button>
+        </Link>
       </>
     );
   }

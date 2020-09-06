@@ -6,10 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import "antd/dist/antd.css";
 import "@quasar/extras/ionicons-v4/ionicons-v4.css";
 
-import "./assets/scss/base.scss";
-
-
-
+import "./styles/base.scss";
 
 ReactDOM.render(
   <BrowserRouter>
