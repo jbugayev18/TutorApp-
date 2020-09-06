@@ -1,6 +1,11 @@
 .tutorContainer {
-  display: flex;
+  display: grid;
+  grid-gap: 30px; 
+  grid-template-columns:1fr 1fr 1fr;
   max-width: 100%;
+  overflow: hidden;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .tutorCard {

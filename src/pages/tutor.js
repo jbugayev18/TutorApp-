@@ -22,6 +22,26 @@ const tutorData = [
     specialization: "Modeling.",
     imageSrc: `${publicURL}/images/ekaterina.jpg`,
   },
+  {
+    name: "Naomi",
+    bio:
+      "Went to an Ivy League University and obtained a degree in Political Science",
+    specialization: "SAT, ISEE, Essay Writing",
+    imageSrc: `${publicURL}/images/naomi.jpg`,
+  },
+  {
+    name: "Mary",
+    bio:
+      "Mary is a certified teacher in the state of California, specializing in English literature and grammar. In particular, Mary offers services in SAT and ISEE",
+    specialization: "English and SAT",
+    imageSrc: `${publicURL}/images/thanh.jpg`,
+  },
+  {
+    name: "David",
+    bio: "Went to NYU and obtained a degree in Screen Writing and Photography",
+    specialization: "Photography, Creative Writing, and Literature",
+    imageSrc: `${publicURL}/images/david.jpg`,
+  },
 ];
 
 const TutorCard = ({ name, bio, specialization, imageSrc }) => (
