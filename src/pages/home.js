@@ -86,14 +86,14 @@ class Home extends React.Component {
           <input type="submit" value="Submit" />
         </form>
         <ul>{tutorList}</ul>
-        <Link to="/SAT">
+        <Link to="/Science">
           <Button
             onClick={() => console.log("Clicked!")}
             type="button"
             buttonStyle="btn--primary--outline"
             buttonSize="btn--medium"
           >
-            SAT{" "}
+            SCIENCE{" "}
           </Button>
         </Link>
 
@@ -117,14 +117,14 @@ class Home extends React.Component {
             READING COMPREHENSION{" "}
           </Button>
         </Link>
-        <Link to="/ForeignLan">
+        <Link to="/ISEE">
           <Button
             onClick={() => console.log("Clicked!")}
             type="button"
             buttonStyle="btn--primary--outline"
             buttonSize="btn--medium"
           >
-            FOREIGN LANGUAGES
+            ISEE
           </Button>
         </Link>
         <Link to="/CAStandards">

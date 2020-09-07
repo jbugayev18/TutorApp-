@@ -1,0 +1,17 @@
+.ISEE {
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightblue;
+    margin: 120px 15px;
+    align-items: center;
+    font-size: 32px;
+    max-width: 50%;
+  }
+}
