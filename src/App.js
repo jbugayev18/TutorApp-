@@ -9,7 +9,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages/home";
 import PageRenderer from "./page-renderer";
 
-
 // class App extends Component {
 //   state = { hasError: false }
 
@@ -19,7 +18,7 @@ import PageRenderer from "./page-renderer";
 //   }
 
 function App() {
-const user = {
+  const user = {
     firstName: "Julia",
     lastName: "B",
   };
