@@ -15,6 +15,15 @@ const navLinks = [
     title: "Classroom Supplies",
     path: "/supplies",
   },
+  {
+    title: "Pricing",
+    path: "/pricing",
+  },
+  {
+    title: "Login",
+    path: "/login",
+  },
+  
 ];
 
 export default function Navigation({ user }) {
