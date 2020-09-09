@@ -34,7 +34,7 @@ const tutorData = [
     bio:
       "Mary is a certified teacher in the state of California, specializing in English literature and grammar. In particular, Mary offers services in SAT and ISEE",
     specialization: "English and SAT",
-    imageSrc: `${publicURL}/images/thanh.jpg`,
+    imageSrc: `${publicURL}/images/mary.jpg`,
   },
   {
     name: "David",

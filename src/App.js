@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import PublicRoute from "./Utils/PublicRoute";
 import LoginPage from "./routes/LoginPage/LoginPage";
+import RegistrationPage from "./pages/RegistrationPage";
 import Navigation from "./components/navigation";
 import { BrowserRouter as Router } from "react-router-dom";
 // import DropDown from "../assets/scss/mocks/DropDown";
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/:page" component={PageRenderer} />
           <PublicRoute path={"/login"} component={LoginPage} />
+          <PublicRoute path={"/register"} component={RegistrationPage} />
           <Route component={() => 404} />
         </Switch>
       </div>

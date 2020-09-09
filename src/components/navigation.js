@@ -20,10 +20,13 @@ const navLinks = [
     path: "/pricing",
   },
   {
+    title: "Register",
+    path: "/register",
+  },
+  {
     title: "Login",
     path: "/login",
   },
-  
 ];
 
 export default function Navigation({ user }) {
