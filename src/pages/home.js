@@ -1,6 +1,10 @@
 import React from "react";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import "./home.css";
+import TutorApiService from '../services/tutor-api-service'
+
+
 
 const tutors = [
   {
@@ -45,32 +49,35 @@ class Home extends React.Component {
     this.setState({ value: event.target.value });
   }
 
-  handleSubmit(event) {
+  async handleSubmit(event) {
     event.preventDefault();
-    alert("Select the Zip Code" + this.state.value);
-    // const result = tutors.filter((tutor) => {
-    //   return tutor.ZipCode === this.state.value;
-    // });
-    // return result;
+    const tutorData = await TutorApiService.getTutorsZipcode(this.state.value);
+    console.log(tutorData);
+    this.setState({ tutorData: [tutorData] });
   }
 
   render() {
-    const result = tutors.filter((tutor) => {
-      return tutor.ZipCode === this.state.value;
-    });
-    const tutorList = result.map((tutor) => {
+
+    const tutorList = this.state.tutorData && this.state.tutorData.map((tutor) => {
       return (
-        <li>
-          {tutor.Name}
-          {tutor.Subject}
-        </li>
+        <div className="tutor-list-item">
+          <h2>
+            {tutor.title
+            }
+          </h2>
+          <p>
+            {tutor.content}
+          </p>
+        </div>
       );
     });
     return (
       <>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Select from Available Zip Codes;
+        <div className="image">
+          <form className="home-form" onSubmit={this.handleSubmit}>
+            <label className="zipcode-select">
+              Select from Available Zip Codes;
+            </label>
             <select
               className="zipcodes"
               value={this.state.value}
@@ -82,61 +89,80 @@ class Home extends React.Component {
               <option value="90272">90272</option>
               <option value="91423">91423</option>
             </select>
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-        <ul>{tutorList}</ul>
-        <Link to="/Science">
-          <Button
-            onClick={() => console.log("Clicked!")}
-            type="button"
-            buttonStyle="btn--primary--outline"
-            buttonSize="btn--medium"
-          >
-            SCIENCE{" "}
-          </Button>
-        </Link>
 
-        <Link to="/MATH">
-          <Button
-            onClick={() => console.log("Clicked!")}
-            type="button"
-            buttonStyle="btn--primary--outline"
-            buttonSize="btn--medium"
-          >
-            MATH{" "}
+            <input type="submit" value="Submit" />
+          </form>
+          <div className="tutor-list">
+          <div>{tutorList}</div>
+          </div>
+        </div>
+        <div className="buttons">
+
+          <div className="button1">
+            <Link to="/Science">
+              <Button
+                onClick={() => console.log("Clicked!")}
+                type="button"
+                buttonStyle="btn--primary--outline"
+                buttonSize="btn--medium"
+              >
+                SCIENCE{" "}
+              </Button>
+            </Link>
+          </div>
+
+          <div className="button2">
+            <Link to="/MATH">
+              <Button className="button2"
+                onClick={() => console.log("Clicked!")}
+                type="button"
+                buttonStyle="btn--primary--outline"
+                buttonSize="btn--medium"
+              >
+                MATH{" "}
+              </Button>
+            </Link>
+          </div>
+
+          <div className="button3">
+            <Link to="/ReadingCom">
+              <Button
+                onClick={() => console.log("Clicked!")}
+                type="button"
+                buttonStyle="btn--primary--outline"
+                buttonSize="btn--medium"
+              >
+                ENGLISH{" "}
+              </Button>
+            </Link>
+          </div>
+
+          <div className="button4">
+            <Link to="/ISEE">
+              <Button
+                onClick={() => console.log("Clicked!")}
+                type="button"
+                buttonStyle="btn--primary--outline"
+                buttonSize="btn--medium"
+              >
+                ISEE
           </Button>
-        </Link>
-        <Link to="/ReadingCom">
-          <Button
-            onClick={() => console.log("Clicked!")}
-            type="button"
-            buttonStyle="btn--primary--outline"
-            buttonSize="btn--medium"
-          >
-            READING COMPREHENSION{" "}
-          </Button>
-        </Link>
-        <Link to="/ISEE">
-          <Button
-            onClick={() => console.log("Clicked!")}
-            type="button"
-            buttonStyle="btn--primary--outline"
-            buttonSize="btn--medium"
-          >
-            ISEE
-          </Button>
-        </Link>
-        <Link to="/CAStandards">
-          <Button
-            onClick={() => console.log("Clicked!")}
-            type="button"
-            buttonStyle="btn--primary--outline"
-            buttonSize="btn--medium"
-          >
-            CA STATE STANDARDS{" "}
-          </Button>
-        </Link>
+            </Link>
+          </div>
+
+          <div className="button5">
+            <Link to="/CAStandards">
+              <Button
+                onClick={() => console.log("Clicked!")}
+                type="button"
+                buttonStyle="btn--primary--outline"
+                buttonSize="btn--medium"
+              >
+                CA STANDARDS{" "}
+              </Button>
+            </Link>
+          </div>
+        </div>
       </>
     );
   }

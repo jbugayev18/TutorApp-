@@ -12,14 +12,6 @@ const navLinks = [
     path: "/tutor",
   },
   {
-    title: "Classroom Supplies",
-    path: "/supplies",
-  },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
     title: "Register",
     path: "/register",
   },

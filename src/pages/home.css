@@ -1,0 +1,66 @@
+.image {
+    background: url("../tutorbackground.jpg");
+    height: 550px;
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    margin-top: 35px;
+
+}
+
+.home-form {
+    display: flex;
+    justify-content: center; 
+    font-size: 35px; 
+    
+}
+
+.zipcode-select {
+    margin-right: 20px;
+}
+.zipcodes {
+    margin-right: 20px;
+}
+
+.tutor-list {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 35px; 
+    margin-top: 5px;
+    max-width: 80%;
+}
+
+.tutor-list-item {
+    background-color: lightblue;
+    border: 1px solid white;
+    opacity: .7;
+    padding-left: 10px; 
+    margin-left: 10px;   
+}
+
+.buttons {
+    display: flex; 
+    justify-content: center;
+    margin-left: 55px;
+    margin-top: 25px;
+    
+    
+}
+
+.button1 {
+    margin-right: 20px;
+}
+.button2 {
+    margin-right: 20px;
+}
+.button3 {
+    margin-right: 20px;
+}
+.button4 {
+    margin-right: 20px;
+}
+.button5 {
+    margin-right: 20px;
+}
