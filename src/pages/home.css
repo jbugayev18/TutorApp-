@@ -64,3 +64,47 @@
 .button5 {
     margin-right: 20px;
 }
+
+@media all and (max-width:600px){
+    .App {
+        min-width: 100%;
+    }
+
+    /* Menu Container */
+    .menu-content-container .active {
+        height: 100%;
+    }
+
+    /* Tutor Select - ZipCode */
+    .home-form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .zipcode-select {
+        text-align: center;
+    }
+
+    .zipcodes {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Buttons */
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 10px
+    }
+
+    .buttons button {
+        width: 256px;
+        margin: 5px;
+    }
+
+
+}

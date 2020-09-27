@@ -2,3 +2,9 @@
   background: grey;
   padding: 50px;
 }
+
+@media all and (max-width: 600px) {
+  .tutorCard {
+    max-width: 10px;
+  }
+}
