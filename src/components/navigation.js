@@ -12,10 +12,6 @@ const navLinks = [
     path: "/tutor",
   },
   {
-    title: "Register",
-    path: "/register",
-  },
-  {
     title: "Login",
     path: "/login",
   },

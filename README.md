@@ -1,71 +1,34 @@
-My React Tutoring App
-A live link to my app can be found: 
+Hello User, this is my React Tutoring App that allows a user to find a tutor catered to designated zip codes in the Los Angeles county!
+
+A live link to my app can be found: https://tutor-app-6fsgcllgt.vercel.app/
+
+Documentation of API: http://localhost:8000/api/tutors
+
+Summary:
+The purpose of this application is for the user to be able to find a tutor catered to selected zipcodes provided from the website. The user is then able to see a tutor that would be available depending on the zip code selected. The user is also able to view all of the tutors provided when clicking on the navigation bar and selecting the "Find Tutor" option. The application also provides buttons on the homepage that are designated for the school subject the user is interested in utilizing.
+
+HomePage Screenshot of the Homepage:
+<a href="https://imgur.com/EqRoBvS"><img src="https://i.imgur.com/EqRoBvS.png" title="source: imgur.com" /></a>
+
+Now the user is able to select from a dropdown of zipcodes and click on the "Submit" button, in which a designated tutor based on the selected zipcode will display on the screen.
+
+Designated Tutor Based on Zip Code screenshot:
+<a href="https://imgur.com/c2y9S1e"><img src="https://i.imgur.com/c2y9S1e.png" title="source: imgur.com" /></a>
+
+A user can also navigate to a new page where all of the tutors are found:
+
+List of All Tutors:
+<a href="https://imgur.com/1YLs0RS"><img src="https://i.imgur.com/1YLs0RS.png" title="source: imgur.com" /></a>
+
+A user can also select a subject that is provided on the homepage, which will navigate the user to a new page with links to the designated subject resources:
+
+Page of Subject Resources:
+<a href="https://imgur.com/xtzhfIl"><img src="https://i.imgur.com/xtzhfIl.png" title="source: imgur.com" /></a>
+
+Technology Used:
+
+Front End: Javascript, React, HTML5, CSS3
+
+Back End: Node.js, Express, PostgreSQL, Mocha, Chai, RESTful APIs
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
