@@ -1,3 +1,6 @@
+My React Tutoring App
+A live link to my app can be found: 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
