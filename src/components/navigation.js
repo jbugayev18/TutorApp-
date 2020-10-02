@@ -11,10 +11,6 @@ const navLinks = [
     title: "Find Tutor",
     path: "/tutor",
   },
-  {
-    title: "Login",
-    path: "/login",
-  },
 ];
 
 export default function Navigation({ user }) {
@@ -22,7 +18,7 @@ export default function Navigation({ user }) {
 
   return (
     <nav className="site-navigation">
-      <span className="menu-title">My React Tutoring App </span>
+      <span className="menu-title">Let's Get Educated! </span>
       <div className={`menu-content-container ${menuActive && "active"}`}>
         <ul>
           {navLinks.map((linkObj, index) => (

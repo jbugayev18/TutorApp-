@@ -57,7 +57,7 @@ const Tutors = () => {
   return (
     <div className="tutorContainer">
       {tutorData.map((tutor, index) => (
-        <TutorCard {...tutor} keyName={index} />
+        <TutorCard {...tutor} keyName={index} key={index} />
       ))}
     </div>
   );
