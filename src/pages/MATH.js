@@ -8,20 +8,40 @@ export default function MATH() {
         <h1>Math Resources</h1>
         <ul>
           <li>
-            <a href="https://www.desmos.com/calculator">
+            <a
+              href="https://www.desmos.com/calculator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Free Graphic Calculator
             </a>
           </li>
           <li>
-            <a href="https://www.khanacademy.org/math">Khan Academy Math</a>
+            <a
+              href="https://www.khanacademy.org/math"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Khan Academy Math
+            </a>
           </li>
           <li>
-            <a href="https://bim.easyaccessmaterials.com/index.php?location_user=cchs">
+            <a
+              href="https://bim.easyaccessmaterials.com/index.php?location_user=cchs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Free Math Textbooks
             </a>
           </li>
           <li>
-            <a href="https://mathantics.com/">Free Math Videos</a>
+            <a
+              href="https://mathantics.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Free Math Videos
+            </a>
           </li>
         </ul>
       </section>

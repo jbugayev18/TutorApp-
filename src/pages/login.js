@@ -14,7 +14,6 @@ export default class Login extends Component {
     e.preventDefault();
     const { user_name, password } = e.target;
 
-    console.log(user_name, password);
 
     TokenService.saveAuthToken(
       TokenService.makeBasicAuthToken(user_name.value, password.value)

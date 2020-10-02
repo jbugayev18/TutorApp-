@@ -7,17 +7,29 @@ export default function READINGCom() {
         <h1>English Resources</h1>
         <ul>
           <li>
-            <a href="https://owl.purdue.edu/owl/purdue_owl.html">
+            <a
+              href="https://owl.purdue.edu/owl/purdue_owl.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Writing Resource
             </a>
           </li>
           <li>
-            <a href="https://www.lexico.com/grammar/grammar-a-z">
+            <a
+              href="https://www.lexico.com/grammar/grammar-a-z"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Grammar Resource
             </a>
           </li>
           <li>
-            <a href="https://www.lexico.com/grammar/grammar-a-z">
+            <a
+              href="https://www.merriam-webster.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Merriam-Webster Dictionary
             </a>
           </li>

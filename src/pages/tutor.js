@@ -44,8 +44,8 @@ const tutorData = [
   },
 ];
 
-const TutorCard = ({ name, bio, specialization, imageSrc }) => (
-  <div className="tutorCard">
+const TutorCard = ({ name, bio, specialization, imageSrc, keyName }) => (
+  <div className="tutorCard" key={keyName}>
     <h1 className="name">{name}</h1>
     <p className="bio">{bio}</p>
     <p className="specialization">{specialization}</p>
@@ -56,8 +56,8 @@ const TutorCard = ({ name, bio, specialization, imageSrc }) => (
 const Tutors = () => {
   return (
     <div className="tutorContainer">
-      {tutorData.map((tutor) => (
-        <TutorCard {...tutor} />
+      {tutorData.map((tutor, index) => (
+        <TutorCard {...tutor} keyName={index} />
       ))}
     </div>
   );

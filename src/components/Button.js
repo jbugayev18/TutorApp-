@@ -1,9 +1,9 @@
 import React from "react";
 import "./button.css";
 
-const STYLES = "btn--primary--solid"
+const STYLES = "btn--primary--solid";
 
-const SIZES = "btn--medium"
+const SIZES = "btn--medium";
 
 export const Button = ({
   children,
@@ -12,13 +12,16 @@ export const Button = ({
   buttonStyle,
   buttonSize,
 }) => {
+  const checkButtonStyle = STYLES.includes(buttonStyle);
 
-    const checkButtonStyle = STYLES.includes(buttonStyle) 
-
-    const checkButtonSize = SIZES.includes(buttonSize)
+  const checkButtonSize = SIZES.includes(buttonSize);
 
   return (
-    <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
+    <button
+      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      onClick={onClick}
+      type={type}
+    >
       {children}
     </button>
   );

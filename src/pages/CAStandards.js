@@ -3,25 +3,39 @@ import React from "react";
 export default function CAStandard() {
   return (
     <div>
-      CA STATE STANDARDS
-      <div className="Websites">
-        <ul>
-          <li>
-            <a href="http://www.corestandards.org/ELA-Literacy/RL/3/">
-              ELA Literacy
-            </a>
-          </li>
-          <li>
-            <a href="http: //www.corestandards.org/Math/Content/3/introduction/">
-              Math Content
-            </a>
-          </li>
-          <li>
-            <a href="http: //www.cde.ca.gov/pd/ca/sc/documents/cangss-gr3-dci-mar2015.doc">
-              CA Common Core Standards
-            </a>
-          </li>
-        </ul>
+      <div className="CA-Standards-Websites">
+        <section className="CA-links">
+          <h1>CA STATE STANDARDS</h1>
+          <ul>
+            <li>
+              <a
+                href="http://www.corestandards.org/ELA-Literacy/RL/3/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ELA Literacy
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.corestandards.org/Math/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Math Content
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.corestandards.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CA Common Core Standards
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   );

@@ -11,7 +11,11 @@ export default function ISEE() {
           <li>ISEE Vocabulary Book Series</li>
           <li>Practice Tests</li>
           <li>
-            <a href="https://isee.ivyglobal.com/practice">
+            <a
+              href="https://isee.ivyglobal.com/practice"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               ISEE Ivy Global Practice Books
             </a>
           </li>
